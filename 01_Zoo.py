@@ -41,13 +41,13 @@ print(Fore.MAGENTA + "-"*20)
 print(Fore.MAGENTA + f"Welcome to {zoo1.name}.")
 print(Fore.MAGENTA + "-"*20)
 while(True):
-    print(Fore.GREEN + "Select the option\n 1 - Add animal\n 2 - Feed animals\n 3 - Print all animals on zoo\n 4 - exit")
+    print(Fore.GREEN + "Select the option\n 1 - Add animal\n 2 - Feed animals\n 3 - Print all animals in zoo\n 4 - exit")
     option = input(Fore.RED + "Select option -> ")
     try:
         int(option)
         if(int(option) in [1,2,3,4]):
             if(int(option)==1):
-                print(Fore.GREEN + "what animal do you want to add on zoo\n 1 - Bear\n 2 - Penguin\n 3 - Giraffe\n 4 - Octopus")
+                print(Fore.GREEN + "what animal do you want to add in zoo\n 1 - Bear\n 2 - Penguin\n 3 - Giraffe\n 4 - Octopus")
                 new_animal = input(Fore.RED + "Select the animal number -> ")
                 while(new_animal not in ['1','2','3','4']):
                     print(Fore.MAGENTA + "-"*20)
@@ -73,13 +73,13 @@ while(True):
             if(int(option)==2):
                 zoo1.feed()
                 print(Fore.MAGENTA + "-"*20)
-                print(Fore.MAGENTA + "You fed all animals on zoo")
+                print(Fore.MAGENTA + f"You fed all animals in {zoo1.name}")
                 print(Fore.MAGENTA + "-"*20)
                 continue
             if(int(option)==3):
                 if (len(zoo1.animals)==0):
                     print(Fore.MAGENTA + "-"*20)
-                    print(Fore.MAGENTA + "There aren't animals on zoo")
+                    print(Fore.MAGENTA + "There aren't animals in zoo")
                     print(Fore.MAGENTA + "-"*20)
                     continue
                 else:
