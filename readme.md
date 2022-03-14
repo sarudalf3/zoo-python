@@ -6,7 +6,7 @@ The targets are:
 - Use hierachies
 - Association between classes
 - Methods
-- Polimosfism
+- Polymorphism
 
 This is a game when I created a zoo and you should feed and breed different animals. There are 4 different kind of animals: Bear, Penguin, Octopus and Giraffe.
 
